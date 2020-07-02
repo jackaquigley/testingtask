@@ -8,6 +8,7 @@ class CardGame
 
   #inconsisent function naming
   def checkforAce(card)
+    # should be == instead of =
     if card.value = 1
       return true
     else
@@ -28,9 +29,11 @@ end
 end
 
 def self.cards_total(cards)
+  #total should be instantiated as a integer
   total
   for card in cards
     total += card.value
+    #no ${} for string interpolation
     return "You have a total of" + total
   end
 end
